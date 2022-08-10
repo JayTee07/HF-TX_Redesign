@@ -249,8 +249,7 @@ text-align: center;
     color: #fff;
 }
 
-.sprt-options {
-}
+
 .options {
     padding: 0 auto !important;
     margin-bottom: 50px;
@@ -316,15 +315,13 @@ text-align: center;
 .footer {
     background-color: #D7176F;
 }
-.footer-content {
-}
+
 .footer-info {
     display: flex;
     flex-direction: row;
     padding-top: 40px;
 }
-.footer-links {
-}
+
 .links {
     list-style: none;
     font-family: 'Montserrat';
