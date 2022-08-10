@@ -156,6 +156,23 @@ li {
     text-align: center;
     padding: 10px 16px !important;
 }
+.sect-subhead {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 30px;
+    text-align: center;
+    padding: 10px 16px 20px!important;
+}
+.sect-copy {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    text-align: center;
+}
 .prg-bc {
     max-width: 100%;
     margin-left: auto!important;
