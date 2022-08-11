@@ -14,7 +14,7 @@
     
     <title>Contact Us - Healthy Futures of Texas</title>
 </head>
-<body>
+<body class="d-flex flex-column h-100">
 <!-- Header with Navbar -->
 <div class="container-fluid">
 <nav class="navbar navbar-expand-lg navbar-light bg-white">
@@ -78,70 +78,98 @@
 </div>
 
 
-<!-- Cards -->
+<!-- Form -->
 <div class="container-fluid">
-    <div class="row justify-content-center col-lg-12 col-md-12 col-sm-12 prg-cards">
-        <div class="col-lg-3 col-md-12 col-sm-12 test">
-            <div class="card-1">
-                <div>
-                    <img src="/images/megaphone.png" class="card-icon">
+    <div class="row justify-content-center col-lg-12 col-md-12 col-sm-12">
+        <form class="row col-lg-12 col-md-12 col-sm-12 form-layout needs-validation" novalidate>
+            <div class="top-row col-lg-12 col-md-12 col-sm-12">
+                <div class="firstname col-lg-4 col-md-12 col-sm-12">
+                    <label class="required-label">First Name</label>
+                    <input type="text" class="form-control" id="validFirstName" placeholder="First Name" required>
+                    <div class="invalid-feedback">Need your first name.</div>
                 </div>
-                <div class="card-title">
-                    Advocacy
-                </div>
-                <div class="card-copy">
-                    At the Texas legislature, state agencies, school districts and city councils, we're there to ensure the best policies are enacted and budgets for healthcare are preserved and expanded. 
-                </div>
-            </div>
-        </div>
-        <div class="col-lg-3 col-md-12 col-sm-12 test">
-            <div class="card-2">
-                <div>
-                    <img src="/images/books (1).png" class="card-icon">
-                </div>
-                <div class="card-title">
-                    Education
-                </div>
-                <div class="card-copy">
-                    We work with youth, parents, schools and community colleges to implement high quality sex ed and clinical referral programs that move the needle on adolescent health outcomes.
+                <div class="lastname col-lg-4 col-md-12 col-sm-12">
+                    <label class="required-label">Last Name</label>
+                    <input type="text" class="form-control" id="validLastName" placeholder="Last Name" required>
+                    <div class="invalid-feedback">Need your last name.</div>
                 </div>
             </div>
-        </div>
-        <div class="col-lg-3 col-md-12 col-sm-12 test">
-            <div class="card-3">
-                <div>
-                    <img src="/images/light-bulb.png" class="card-icon">
+
+            <div class="top-row col-lg-12 col-md-12 col-sm-12">
+                <div class="firstname col-lg-4 col-md-12 col-sm-12">
+                    <label class="required-label">Email</label>
+                    <input type="email" class="form-control" id="validEmail" placeholder="Email" required>
+                    <div class="invalid-feedback">Need your email.</div>
                 </div>
-                <div class="card-title">
-                    Curriculum Design
-                </div>
-                <div class="card-copy">
-                    From traditional multi-lesson facilitator-led curricula for youth and parents to innovative strategies involving youth as curriculum co-developers, we're a leader in developing sex ed that works.
-                </div>
-            </div>
-        </div>
-        <div class="col-lg-3 col-md-12 col-sm-12 test">
-            <div class="card-4">
-                <div>
-                    <img src="/images/teamwork.png" class="card-icon">
-                </div>
-                <div class="card-title">
-                    Partnerships
-                </div>
-                <div class="card-copy">
-                    Our partners include government agencies, universities and colleges, school districts and non profits, creating a collaborative network that strengthens communities across the state.
+                <div class="lastname col-lg-4 col-md-12 col-sm-12">
+                    <label class="required-label">Phone Number</label>
+                    <input type="tel" class="form-control" id="validPhone" placeholder="XXX.XXX.XXXX" pattern="[0-9]{3}.[0-9]{3}.[0-9]{4}" maxlength="12" required>
+                    <div class="invalid-feedback">Need your phone number.</div>
                 </div>
             </div>
-        </div>
+
+            <div class="col-lg-12 col-md-12 col-sm-12 justify-content-center align-items-center">
+                <div class="drop-1 col-lg-4">
+                    <div class="drop-copy">
+                        <label class="required-drop" for="identity">I'm a:</label>
+                    </div>
+                    <div class="dropdown-1">
+                        <input type="radio" name="sortType" value="Relevance" checked="checked" id="sort-relevance"><label for="sort-relevance">Chooose one...</label>
+                        <input type="radio" name="sortType" value="Popularity" id="sort-best"><label class="label-test" for="sort-best">Community Advocate</label>
+                        <input type="radio" name="sortType" value="PriceIncreasing" id="sort-low"><label class="label-test" for="sort-low">Elected Official</label>
+                        <input type="radio" name="sortType" value="PriceDecreasing" id="sort-high"><label class="label-test" for="sort-high">Parent</label>
+                        <input type="radio" name="sortType" value="ProductBrand" id="sort-brand"><label class="label-test" for="sort-brand">School District Employee</label>
+                    </div>
+
+                        <!-- Select Dropdown Option
+                        <select class="custom-select d-block w-100" id="identity" required>
+                          <option value="">Choose one...</option>
+                          <option class="choice">Community Advocate</option>
+                          <option>Elected Official</option>
+                          <option>Parent</option>
+                          <option>School District Employee</option>
+                        </select> -->
+                    <div class="invalid-feedback">
+                        Please select an item from the list.
+                    </div>
+                </div>
+            </div>
+
+           <!-- <div class="col-lg-12 col-md-12 col-sm-12 justify-content-center align-items-center">
+                <div class="drop-2 col-lg-4">
+                    <div class="drop-copy">
+                        <label class="required-drop" for="programs">Wanting more information on:</label>
+                    </div>
+                    <div class="dropdown-2">
+                        <input type="radio" name="sortType" value="Relevance" checked="checked" id="sort-relevance"><label for="sort-relevance">Chooose one...</label>
+                        <input type="radio" name="sortType" value="Popularity" id="sort-best"><label class="label-test" for="sort-best">Community Advocate</label>
+                        <input type="radio" name="sortType" value="PriceIncreasing" id="sort-low"><label class="label-test" for="sort-low">Elected Official</label>
+                        <input type="radio" name="sortType" value="PriceDecreasing" id="sort-high"><label class="label-test" for="sort-high">Parent</label>
+                        <input type="radio" name="sortType" value="ProductBrand" id="sort-brand"><label class="label-test" for="sort-brand">School District Employee</label>
+                    </div>
+                </div>
+            </div> -->
+
+            <div class="form-group col-lg-12 col-md-12 col-sm-12">
+                <div class="textarea col-lg-8">
+                    <label class="form-label">Message</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="5" cols="10" onkeyup="CountWords(this)" id="txtBody" maxlength="3000"></textarea>
+                    <label class="form-label-spec" id="words">3000 characters left</label>
+                </div>
+            </div>
+
+            <!-- Form Button -->
+            <div class="container-fluid">
+                <div class="row justify-content-center col-lg-4 col-md-6 col-sm-12 prg-btn-container">
+                    <button type="submit" class="prg-btn">Submit</button>
+                </div>
+            </div>
+        </form>
     </div>
 </div>
 
-<!-- Programs Button -->
-<div class="container-fluid">
-    <div class="row justify-content-center col-lg-4 col-md-6 col-sm-12 prg-btn-container">
-        <button class="prg-btn">View Our Programs</button>
-    </div>
-</div>
+
+
 
 
 
@@ -183,6 +211,8 @@
 </div>
 </section>
 
+    <script src="js/index.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>

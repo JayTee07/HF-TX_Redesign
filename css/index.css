@@ -328,6 +328,7 @@ text-align: center;
 .bkg-color {
     background-color: #D7176F;
     max-width: 100%;
+    border: 1px solid black;
 }
 .footer {
     background-color: #D7176F;
@@ -385,3 +386,194 @@ text-align: center;
     line-height: 19px;
     color: #fff;
 }
+.form-layout {
+    max-width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto 200px!important;
+}
+.top-row {
+    padding-bottom: 20px !important;
+    max-width: 100%;
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto !important;
+    justify-content: center;
+    align-items: center;
+    padding-top: 0 !important;
+}
+.firstname {
+    padding-right: 20px!important;
+}
+.lastname {
+    padding-left: 0px!important;
+}
+.drop-1 {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto 40px !important;
+}
+.drop-2 {
+    border: 1px solid blue;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto 40px !important;
+}
+.textarea {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto 40px !important;
+}
+.form-label {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    padding-left: 12px !important;
+    padding-bottom: 5px !important;
+    margin: 0!important;
+    color: #a2a2a2;
+}
+
+.custom-select {
+    color: #D7176F !important;
+    font-family: 'Lato' !important;
+    font-style: normal !important;
+    font-weight: 400 !important;
+    font-size: 16px !important;
+    line-height: 19px !important;
+}
+
+.form-label-spec {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    padding-left: 12px !important;
+    padding-top: 10px!important;
+    margin: 0!important;
+    color: #a2a2a2;
+}
+
+.required-label {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    padding-left: 12px !important;
+    padding-bottom: 5px !important;
+    margin: 0!important;
+    color: #a2a2a2;
+}
+.required-label:after {
+    content:"*" !important;
+    color: #D7176F !important;
+
+}
+
+.required-drop {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    padding-left: 12px !important;
+    padding-top: 10px!important;
+    margin: 0!important;
+    color: #000;
+}
+.required-drop:after {
+    content:"*" !important;
+    color: #D7176F !important;
+
+}
+
+.dropdown-1 {
+    width: 100%;
+    position: relative;
+    display: inline-block;
+    margin-right: 1em;
+    min-height: 38px;
+    max-height: 38px;
+    overflow: hidden;
+    top: 5px;
+    cursor: pointer;
+    text-align: left;
+    white-space: nowrap;
+    color: #495057;
+    outline: none;
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+    background-color: #fff;
+    transition: 0.3s all ease-in-out;
+  }
+  .dropdown-1 input:focus + label {
+    background: #def;
+  }
+  .dropdown-1 input {
+    width: 1px;
+    height: 1px;
+    display: inline-block;
+    position: absolute;
+    opacity: 0.01;
+  }
+  .dropdown-1 label {
+    display: block;
+    height: 38px;
+    line-height: 2em;
+    padding-left: 1em;
+    padding-right: 3em;
+    padding-top: 0.125em;
+    cursor: pointer;
+    position: relative;
+    transition: 0.3s color ease-in-out;
+    margin-bottom: 0 !important;
+  }
+  .dropdown-1 label:nth-child(2) {
+    margin-top: 2em;
+
+  }
+  .dropdown-1 input:checked + label {
+    display: block;
+    border-top: none;
+    position: absolute;
+    top: 0;
+    width: 100%;
+  }
+  .dropdown-1 input:checked + label:nth-child(2) {
+    margin-top: 0;
+    position: relative;
+  }
+  .dropdown-1::after {
+    content: "";
+    position: absolute;
+    right: 0.8em;
+    top: 0.9em;
+    border: 5px solid #ced4da;
+    border-color: #000 transparent transparent transparent;
+    transition: 0.4s all ease-in-out;
+  }
+  .dropdown-1.expanded {
+    border: 1px solid #ced4da;
+    background: #fff;
+    border-radius: 0.25em;
+    padding: 0;
+    box-shadow: rgba(0, 0, 0, 0.1) 3px 3px 5px 0px;
+    max-height: 15em;
+  }
+
+  .dropdown-1.expanded label:hover {
+    color: #D7176F;
+  }
+  .dropdown-1.expanded input:checked + label {
+    color: #D7176F;
+  }
+  .dropdown-1.expanded::after {
+    transform: rotate(-180deg);
+    top: 0.55em;
+  }/*# sourceMappingURL=custom.css.map */
