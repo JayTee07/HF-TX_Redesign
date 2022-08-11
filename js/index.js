@@ -132,3 +132,23 @@
   $(document).click(function() {
     $('.dropdown-1').removeClass('expanded');
   });
+
+  $('.dropdown-2').click(function(e) {
+    e.preventDefault();
+    e.stopPropagation();
+    $(this).toggleClass('expanded');
+    $('#'+$(e.target).attr('for')).prop('checked',true);
+  });
+  $(document).click(function() {
+    $('.dropdown-2').removeClass('expanded');
+  });
+
+  $(function () {
+    $('.selectpicker').selectpicker();
+});
+
+$(document).ready(function() {
+    $('#example-allSelectedText').multiselect({
+        allSelectedText: 'No option left ...'
+    });
+});

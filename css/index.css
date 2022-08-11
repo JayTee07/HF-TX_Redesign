@@ -3,6 +3,7 @@
     padding: 0;
     margin: 0;
 }
+
 .col-lg-12 {
     padding: 0 !important;
 }
@@ -23,7 +24,20 @@
     margin-left: auto !important;
     margin-right: 0 !important;
 }
-
+.nav-link {
+    text-decoration: none!important;
+    color: #000 !important;
+}
+.nav-link:hover {
+    color: #1cbbb4 !important;
+}
+.nav-link:active {
+    color: #D7176F;
+}
+.dropdown-item:hover {
+    color: #000 !important;
+    background-color: rgba(28, 187, 180, 0.15) !important;
+}
 li {
     margin: 0px 5px !important;
     font-family: 'Montserrat', 'sans-serif' !important;
@@ -265,7 +279,38 @@ text-align: center;
     letter-spacing: 0.5px;
     color: #fff;
 }
-
+.contact-btn {
+    background: #D7176F;
+    box-shadow: 3px 7px 15px rgba(0, 0, 0, 0.25);
+    border-radius: 40px;
+    padding: 20px 126px;
+    border: none;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 20px;
+    letter-spacing: 0.5px;
+    color: #fff;
+    transition: all 0.3s ease;
+}
+.contact-btn:hover {
+    transform: scale(0.95);
+    background-color: #fff;
+    box-shadow: 3px 7px 15px rgba(0, 0, 0, 0.25);
+    border: 2px solid #D7176F;
+    color: #D7176F;
+}
+.contact-btn:active {
+    transform: scale(0.95);
+    box-shadow: 0px 2px 7px rgba(0, 0, 0, 0.75);
+    border: none !important;
+    background-color: #fff;
+    color: #1cbbb4;
+}
+.contact-btn:focus {
+    outline: 0 !important;
+}
 
 .options {
     padding: 0 auto !important;
@@ -328,7 +373,6 @@ text-align: center;
 .bkg-color {
     background-color: #D7176F;
     max-width: 100%;
-    border: 1px solid black;
 }
 .footer {
     background-color: #D7176F;
@@ -338,6 +382,15 @@ text-align: center;
     display: flex;
     flex-direction: row;
     padding-top: 40px;
+}
+.footer-link {
+    text-decoration: none;
+    color: #fff;
+    cursor: pointer;
+}
+.footer-link:hover {
+    color: #000;
+    text-decoration: none;
 }
 
 .links {
@@ -416,7 +469,6 @@ text-align: center;
     margin: 0 auto 40px !important;
 }
 .drop-2 {
-    border: 1px solid blue;
     display: flex;
     flex-direction: column;
     margin: 0 auto 40px !important;
@@ -492,6 +544,17 @@ text-align: center;
     color: #D7176F !important;
 
 }
+.dropdown-copy {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    padding-left: 12px !important;
+    padding-top: 10px!important;
+    margin: 0!important;
+    color: #000;
+}
 
 .dropdown-1 {
     width: 100%;
@@ -513,7 +576,9 @@ text-align: center;
     transition: 0.3s all ease-in-out;
   }
   .dropdown-1 input:focus + label {
-    background: #def;
+    border-color: #80bdff;
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgb(0 123 255 / 25%);
   }
   .dropdown-1 input {
     width: 1px;
@@ -573,7 +638,62 @@ text-align: center;
   .dropdown-1.expanded input:checked + label {
     color: #D7176F;
   }
+
   .dropdown-1.expanded::after {
     transform: rotate(-180deg);
     top: 0.55em;
   }/*# sourceMappingURL=custom.css.map */
+
+
+  .bootstrap-select .bs-ok-default::after {
+    width: 0.3em !important;
+    height: 0.6em !important;
+    border-width: 0 0.1em 0.1em 0 !important;
+    transform: rotate(45deg) translateY(0.5rem) !important;
+}
+
+.dropdown-toggle-x {
+    border: 1px solid #ced4da !important;
+    color: #000 !important;
+}
+.bs-placeholder {
+    content: "Select Program(s)" !important;
+}
+
+.avatar-img {
+    margin: 0 auto!important;
+}
+
+.sub-btn {
+    background: #D7176F;
+    box-shadow: 3px 7px 15px rgba(0, 0, 0, 0.25);
+    border-radius: 40px;
+    padding: 20px 80px;
+    border: none;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 20px;
+    letter-spacing: 0.5px;
+    color: #fff;
+    margin-bottom: 300px!important;
+    transition: all 0.3s ease;
+}
+.sub-btn:hover {
+    transform: scale(0.95);
+    background-color: #fff;
+    box-shadow: 3px 7px 15px rgba(0, 0, 0, 0.25);
+    border: 2px solid #D7176F;
+    color: #D7176F;
+}
+.sub-btn:active {
+    transform: scale(0.95);
+    box-shadow: 0px 2px 7px rgba(0, 0, 0, 0.75);
+    border: none !important;
+    background-color: #fff;
+    color: #1cbbb4;
+}
+.sub-btn:focus {
+    outline: 0 !important;
+}
