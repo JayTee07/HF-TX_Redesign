@@ -864,8 +864,8 @@ text-align: center;
     border-radius: 0.25em;
     padding: 0;
     box-shadow: rgba(0, 0, 0, 0.1) 3px 3px 5px 0px;
-    max-height: 15em;
-    overflow: scroll;
+    max-height: 35em;
+    overflow: visible;
   }
 
   .dropdown-2.expanded2 label:hover {
