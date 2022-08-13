@@ -136,11 +136,11 @@
   $('.dropdown-2').click(function(e) {
     e.preventDefault();
     e.stopPropagation();
-    $(this).toggleClass('expanded');
-    $('#'+$(e.target).attr('for')).prop('checked',true);
+    $(this).toggleClass('expanded2');
+    $('#'+$(e.target).attr('for')).prop('checked2',true);
   });
   $(document).click(function() {
-    $('.dropdown-2').removeClass('expanded');
+    $('.dropdown-2').removeClass('expanded2');
   });
 
   $(function () {
