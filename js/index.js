@@ -137,7 +137,7 @@
     e.preventDefault();
     e.stopPropagation();
     $(this).toggleClass('expanded2');
-    $('#'+$(e.target).attr('for')).prop('hilite',true);
+    $('#'+$(e.target).attr('for')).prop('checked',true);
   });
   $(document).click(function() {
     $('.pro-drop').removeClass('expanded2');
