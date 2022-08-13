@@ -137,7 +137,7 @@
     e.preventDefault();
     e.stopPropagation();
     $(this).toggleClass('expanded2');
-    $('#'+$(e.target).attr('for')).prop('selected',true);
+    $('#'+$(e.target).attr('for')).prop('checked',true);
   });
   $(document).click(function() {
     $('.dropdown-2').removeClass('expanded2');
