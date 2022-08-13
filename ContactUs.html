@@ -20,7 +20,7 @@
 <!-- Header with Navbar -->
 <div class="container-fluid">
 <nav class="navbar navbar-expand-lg navbar-light bg-white">
-    <a class="navbar-brand" href="#">
+    <a class="navbar-brand" href="/index.html">
         <img src="./images/HF-TX_Logo.png" width="280" height="105" alt="Healthy Futures of Texas">
     </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -29,7 +29,7 @@
     <div class="collapse navbar-collapse" id="navbarNavDropdown">
       <ul class="navbar-nav">
         <li class="nav-item active">
-          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+          <a class="nav-link" href="/index.html">Home <span class="sr-only">(current)</span></a>
         </li>
         <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -83,16 +83,22 @@
 <!-- Form -->
 <div class="container-fluid">
     <div class="row justify-content-center col-lg-12 col-md-12 col-sm-12">
-        <form class="row col-lg-12 col-md-12 col-sm-12 form-layout needs-validation" novalidate>
+        <form class="row col-lg-12 col-md-12 col-sm-12 form-layout needs-validation" novalidate action="https://formsubmit.co/ca02936c5cd43874ccfb810222605e6d" method="POST">
             <div class="top-row col-lg-12 col-md-12 col-sm-12">
                 <div class="firstname col-lg-4 col-md-12 col-sm-12">
+                    <!-- Honeypot -->
+               <input type="text" name="_honeypot" style="display: none;">
+               <!-- Disable Captcha-->
+               <input type="hidden" name="_captcha" value="false">
+               <!-- Success Page -->
+               <input type="hidden" name="_next" value="https://jaytee07.github.io/JTavitas_Portfolio_v4/success.html">
                     <label class="required-label">First Name</label>
-                    <input type="text" class="form-control" id="First_Name" placeholder="First Name" required>
+                    <input type="text" class="form-control" id="validFirstName" placeholder="First Name" required name="First_Name">
                     <div class="invalid-feedback">Need your first name.</div>
                 </div>
                 <div class="lastname col-lg-4 col-md-12 col-sm-12">
                     <label class="required-label">Last Name</label>
-                    <input type="text" class="form-control" id="Last_Name" placeholder="Last Name" required>
+                    <input type="text" class="form-control" id="validLastName" placeholder="Last Name" required name="Last_Name">
                     <div class="invalid-feedback">Need your last name.</div>
                 </div>
             </div>
@@ -100,12 +106,12 @@
             <div class="top-row col-lg-12 col-md-12 col-sm-12">
                 <div class="firstname col-lg-4 col-md-12 col-sm-12">
                     <label class="required-label">Email</label>
-                    <input type="email" class="form-control" id="validEmail" placeholder="Email" required>
+                    <input type="email" class="form-control" id="validEmail" placeholder="Email" required name="Email">
                     <div class="invalid-feedback">Need your email.</div>
                 </div>
                 <div class="lastname col-lg-4 col-md-12 col-sm-12">
                     <label class="required-label">Phone Number</label>
-                    <input type="tel" class="form-control" id="validPhone" placeholder="XXX.XXX.XXXX" pattern="[0-9]{3}.[0-9]{3}.[0-9]{4}" maxlength="12" required>
+                    <input type="tel" class="form-control" id="validPhone" placeholder="XXX.XXX.XXXX" pattern="[0-9]{3}.[0-9]{3}.[0-9]{4}" maxlength="12" required name="Phone_Number">
                     <div class="invalid-feedback">Need your phone number.</div>
                 </div>
             </div>
