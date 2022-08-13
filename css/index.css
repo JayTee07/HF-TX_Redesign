@@ -67,7 +67,7 @@ li {
 }
 
 .bg-image {
-    background-image: url(../images/Teen_Group.png);
+    background-image: url(/images/Teen_Group.png);
     background-repeat: none !important;
     background-size: cover;
     background-position: center center;
