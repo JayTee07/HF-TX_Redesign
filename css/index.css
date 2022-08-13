@@ -865,7 +865,6 @@ text-align: center;
     padding: 0;
     box-shadow: rgba(0, 0, 0, 0.1) 3px 3px 5px 0px;
     max-height: 15em;
-    overflow: scroll;
   }
 
   .pro-drop.expanded2 label:hover {
