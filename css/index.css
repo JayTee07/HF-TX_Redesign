@@ -791,7 +791,7 @@ text-align: center;
     outline: 0 !important;
 }
 
-.dropdown-2 {
+.pro-drop {
     width: 100%;
     position: relative;
     display: inline-block;
@@ -810,19 +810,19 @@ text-align: center;
     background-color: #fff;
     transition: 0.3s all ease-in-out;
   }
-  .dropdown-2 input:focus + label {
+  .pro-drop input:focus + label {
     border-color: #80bdff;
     outline: 0;
     box-shadow: 0 0 0 0.2rem rgb(0 123 255 / 25%);
   }
-  .dropdown-2 input {
+  .pro-drop input {
     width: 1px;
     height: 1px;
     display: inline-block;
     position: absolute;
     opacity: 0.01;
   }
-  .dropdown-2 label {
+  .pro-drop label {
     display: block;
     height: 38px;
     line-height: 2em;
@@ -834,22 +834,22 @@ text-align: center;
     transition: 0.3s color ease-in-out;
     margin-bottom: 0 !important;
   }
-  .dropdown-2 label:nth-child(2) {
+  .pro-drop label:nth-child(2) {
     margin-top: 2em;
 
   }
-  .dropdown-2 input:checked + label {
+  .pro-drop input:checked + label {
     display: block;
     border-top: none;
     position: absolute;
     top: 0;
     width: 100%;
   }
-  .dropdown-2 input:checked + label:nth-child(2) {
+  .pro-drop input:checked + label:nth-child(2) {
     margin-top: 0;
     position: relative;
   }
-  .dropdown-2::after {
+  .pro-drop::after {
     content: "";
     position: absolute;
     right: 0.8em;
@@ -858,7 +858,7 @@ text-align: center;
     border-color: #000 transparent transparent transparent;
     transition: 0.4s all ease-in-out;
   }
-  .dropdown-2.expanded2 {
+  .pro-drop.expanded2 {
     border: 1px solid #ced4da;
     background: #fff;
     border-radius: 0.25em;
@@ -868,14 +868,14 @@ text-align: center;
     overflow: visible;
   }
 
-  .dropdown-2.expanded2 label:hover {
+  .pro-drop.expanded2 label:hover {
     color: #D7176F;
   }
-  .dropdown-2.expanded2 input:checked + label {
+  .pro-drop.expanded2 input:checked + label {
     color: #D7176F;
   }
 
-  .dropdown-2.expanded2::after {
+  .pro-drop.expanded2::after {
     transform: rotate(-180deg);
     top: 0.55em;
   }/*# sourceMappingURL=custom.css.map */

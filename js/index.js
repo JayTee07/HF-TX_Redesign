@@ -133,14 +133,14 @@
     $('.dropdown-1').removeClass('expanded');
   });
 
-  $('.dropdown-2').click(function(e) {
+  $('.pro-drop').click(function(e) {
     e.preventDefault();
     e.stopPropagation();
     $(this).toggleClass('expanded2');
-    $('#'+$(e.target).attr('for')).prop('checked',true);
+    $('#'+$(e.target).attr('for')).prop('hilite',true);
   });
   $(document).click(function() {
-    $('.dropdown-2').removeClass('expanded2');
+    $('.pro-drop').removeClass('expanded2');
   });
 
   $(function () {
